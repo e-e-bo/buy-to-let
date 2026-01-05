@@ -1,11 +1,14 @@
 /**************************************
 Written by Erlend Eide Bø // eeb@ssb.no
 
-Last changed 03.01.2026 
+Last changed 06.01.2026 
 
 Data on mortgage rates in Norway,
  2007-2014, for the paper "Buy to 
  let".
+
+Input: Mortgage rates_ex.xlsx from 
+ Excel. 
 
 Output: mort_rates.dta;
 **************************************/
