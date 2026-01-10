@@ -1,14 +1,14 @@
 /**************************************
 Written by Erlend Eide Bø // eeb@ssb.no
 
-Last changed 06.01.2026 
+Last changed 10.01.2026 
 
 Data and on housing supply in Oslo,
  for the paper "Buy to let".
 
 Input: Antbolig_full_ex.xlsx; 
  Boligbygg_ex.xlsx from Excel; 
- inflow_out.dta from Pop_oslo.do
+ inflow_out.dta from Pop_oslo.do.
 
 Output: antbolig.dta; antbolig_y.dta;  
  boligbygg.dta.
