@@ -1,13 +1,13 @@
 /**************************************
 Written by Erlend Eide Bø // eeb@ssb.no
 
-Last changed 06.01.2026 
+Last changed 14.01.2026 
 Measuring the population inflow and 
  outflow to Oslo, for the paper 
  "Buy to let".
 
 Input: Befoloslokvart_full_ex.xlsx from
- Excel. 
+ Statistcs Norway's Statbank. 
 
 Output: inflow_out.dta; inflow22.csv.
 ***************************************/
