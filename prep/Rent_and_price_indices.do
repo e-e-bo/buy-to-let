@@ -12,7 +12,7 @@ This code imports rental prices for Oslo
 Input: cpimall.xlsx from Statistcs Norway's 
  Statbank;
  Leieoslo.xlsx from Boligbygg; 
- NEFindex.xlsx from NEF 
+ NEFindex.xlsx from NEF. 
  
  
 Output: leieoslo.dta; nefind.dta; plind.dta;
