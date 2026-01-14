@@ -1,7 +1,7 @@
 /*******************************************
 Written by Erlend Eide Bø // eeb@ssb.no
 
-Last changed 10.01.2026
+Last changed 14.01.2026
 
 This code imports rental prices for Oslo
  from Boligbygg and housing prices from 
@@ -9,8 +9,11 @@ This code imports rental prices for Oslo
  It adjusts these price indices with
  inflation.
  
-Input: Leieoslo.xlsx, NEFindex.xlsx and 
- cpimall.xlsx from Excel.
+Input: cpimall.xlsx from Statistcs Norway's 
+ Statbank;
+ Leieoslo.xlsx from Boligbygg; 
+ NEFindex.xlsx from NEF 
+ 
  
 Output: leieoslo.dta; nefind.dta; plind.dta;
 nefrind.dta.
