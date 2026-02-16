@@ -1,7 +1,7 @@
 /**************************************
 Written by Erlend Eide Bø // eeb@ssb.no
 
-Last changed 02.02.2026 
+Last changed 16.02.2026 
 
 Import data on registered housing 
  transactions from Ambita,
@@ -121,6 +121,8 @@ save eiendom_2013_2016, replace
 *********************
 
 * Transactions
+
+* Self-owned housing
 use borett_2006_2007, clear
 
 append using borett_2008_2012 borett_2013_2016 eiendom_2003_2007 eiendom_2008_2012 eiendom_2013_2016
@@ -134,7 +136,16 @@ drop if inlist(daar,2003,2004,2005)
 keep if inlist(omsetningstypekode,1,8) // Free sales & Other
 keep if inlist(brukavgrunnkode,"B","A","U") // Housing, Other & Not given
 
-drop boligtype brukavgrunn omsetningstype eiendomadressegatenavn festenr 
+drop boligtype brukavgrunn omsetningstype eiendomadressegatenavn festenr registerenhetsnivå poststed næringsgruppe bygningsstatus personidtypebeskrivelse
+
+keep if kjøpesum > 0
+
+format personid %11.0f
+
+g personid2=substr(strofreal(personid,"%011.0f"),1,2)
+destring personid2, replace
+
+drop if personid == . // 5 obs.
 
 save /ssb/stamme03/sparing/skatt/wk24/ambita_oslo.dta, replace
 
@@ -151,7 +162,14 @@ rename dokumentår daar
 keep if inlist(omsetningstypekode,1,8) // Free sales & Other
 keep if inlist(brukavgrunnkode,"B","A","U") // Housing, Other & Not given
 
-drop boligtype brukavgrunn omsetningstype eiendomadressegatenavn poststed 
+drop boligtype brukavgrunn omsetningstype eiendomadressegatenavn poststed registerenhetsnivå næringsgruppe bygningsstatus personidtypebeskrivelse
+
+format personid %11.0f
+
+g personid2=substr(strofreal(personid,"%011.0f"),1,2)
+destring personid2, replace
+
+drop if personid == . // 1 obs.
 
 save /ssb/stamme03/sparing/skatt/wk24/ambita_bor.dta, replace
 
@@ -165,7 +183,14 @@ drop if inlist(daar,2013,2014)
 keep if inlist(omsetningstypekode,1,8) // Free sales & Other
 keep if inlist(brukavgrunnkode,"B","A","U") // Housing, Other & Not given
 
-drop boligtype brukavgrunn omsetningstype poststed festenr
+drop boligtype brukavgrunn omsetningstype poststed festenr registerenhetsnivå næringsgruppe bygningsstatus personidtypebeskrivelse
+
+format personid %11.0f
+
+g personid2=substr(strofreal(personid,"%011.0f"),1,2)
+destring personid2, replace
+
+drop if personid == . // 1 obs.
 
 save /ssb/stamme03/sparing/skatt/wk24/ambita_selv1516.dta, replace
 
@@ -183,7 +208,16 @@ drop if inlist(daar,2003,2004,2005)
 *keep if inlist(omsetningstypekode,1,8) // Free sales & Other
 keep if inlist(brukavgrunnkode,"B","A","U") // Housing, Other & Not given
 
-drop boligtype brukavgrunn omsetningstype eiendomadressegatenavn festenr 
+drop boligtype brukavgrunn omsetningstype eiendomadressegatenavn festenr registerenhetsnivå poststed næringsgruppe bygningsstatus personidtypebeskrivelse
+
+*keep if kjøpesum > 0
+
+format personid %11.0f
+
+g personid2=substr(strofreal(personid,"%011.0f"),1,2)
+destring personid2, replace
+
+drop if personid == . // 5 obs.
 
 save /ssb/stamme03/sparing/skatt/wk24/ambita_oslo_full.dta, replace
 
