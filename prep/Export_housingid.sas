@@ -13,7 +13,7 @@ outfiles:
 housingid.dta; housingid_oslo.dta.
 *******************************************/
 
-libname skatt '/skatt/wk24';
+libname skatt '/data';
 
 data housingid (drop=matrikkelenhetid);
   set skatt.gabba (keep=matrikkelenhetid kommunenr gate_gaardsnr hus_bruksnr bokstav_festenr gaardsnr bruksnr seksjonsnr leilighetsnr);
@@ -22,7 +22,7 @@ run;
 
 *Export to Stata;
 PROC EXPORT DATA=housingid
-            OUTFILE= "/skatt/wk24/housingid.dta"
+            OUTFILE= "/data/housingid.dta"
             DBMS=STATA REPLACE;
 RUN;
 
@@ -36,6 +36,6 @@ run;
 
 *Export to Stata;
 PROC EXPORT DATA=housingid_oslo
-            OUTFILE= "/skatt/wk24/housingid_oslo.dta"
+            OUTFILE= "/data/wk24/housingid_oslo.dta"
             DBMS=STATA REPLACE;
 RUN;
