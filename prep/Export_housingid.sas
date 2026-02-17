@@ -1,0 +1,41 @@
+/*******************************************
+Written by Erlend Eide Bø // eeb@ssb.no
+
+Last changed 17.02.2026
+
+Cleaning data from .sas file and exporting 
+ to .dta format.
+ 
+Infiles: 
+.sas files from Statistics Norway registers.
+
+outfiles: 
+housingid.dta; housingid_oslo.dta.
+*******************************************/
+
+libname skatt '/skatt/wk24';
+
+data housingid (drop=matrikkelenhetid);
+  set skatt.gabba (keep=matrikkelenhetid kommunenr gate_gaardsnr hus_bruksnr bokstav_festenr gaardsnr bruksnr seksjonsnr leilighetsnr);
+  where same and matrikkelenhetid ne .;
+run;
+
+*Export to Stata;
+PROC EXPORT DATA=housingid
+            OUTFILE= "/skatt/wk24/housingid.dta"
+            DBMS=STATA REPLACE;
+RUN;
+
+
+* Only Oslo
+data housingid_oslo (drop=matrikkelenhetid kommunenr);
+  set skatt.gabba (keep=matrikkelenhetid kommunenr gate_gaardsnr hus_bruksnr bokstav_festenr gaardsnr bruksnr seksjonsnr leilighetsnr);
+  where kommunenr = '0301';
+  where same and matrikkelenhetid ne .;
+run;
+
+*Export to Stata;
+PROC EXPORT DATA=housingid_oslo
+            OUTFILE= "/skatt/wk24/housingid_oslo.dta"
+            DBMS=STATA REPLACE;
+RUN;
