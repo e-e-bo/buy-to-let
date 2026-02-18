@@ -1,7 +1,7 @@
 /*******************************************
 Written by Erlend Eide Bø // eeb@ssb.no
 
-Last changed 17.02.2026
+Last changed 18.02.2026
 
 Cleaning data from .sas file and exporting 
  to .dta format.
