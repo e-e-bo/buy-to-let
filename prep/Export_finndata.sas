@@ -7,11 +7,10 @@ Creating .sas files with code lists and
  formats from .txt files.
  Exporting to .dta format.
  
-Infiles: 
-.txt files from Finn.no via Statistics Norway.
+Input: .txt files from Finn.no via Statistics 
+ Norway.
 
-outfiles: 
-finn.dta;
+output: finn.dta;
 *******************************************/
 
 libname skatt '/data';
