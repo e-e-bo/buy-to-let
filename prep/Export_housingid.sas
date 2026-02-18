@@ -6,11 +6,10 @@ Last changed 17.02.2026
 Cleaning data from .sas file and exporting 
  to .dta format.
  
-Infiles: 
-.sas files from Statistics Norway registers.
+Input: .sas files from Statistics Norway 
+ registers.
 
-outfiles: 
-housingid.dta; housingid_oslo.dta.
+output: housingid.dta; housingid_oslo.dta.
 *******************************************/
 
 libname skatt '/data';
