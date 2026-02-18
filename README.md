@@ -4,6 +4,7 @@ Code for the paper Buy to let
 
 Prep:
 Code for data preparation (Stata).
+- The .sas files are only of use for preparing micro data from Statistics Norway.
 
 Data:
 Aggreagate statistics from the Statistics Norway statbank (www.ssb.no/statbank; in Excel format).
