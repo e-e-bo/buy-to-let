@@ -10,7 +10,7 @@ Creating .sas files with code lists and
 Input: .txt files from Finn.no via Statistics 
  Norway.
 
-Output: finn.dta;
+Output: finndata.dta;
 *******************************************/
 
 libname skatt '/data';
