@@ -1,7 +1,7 @@
 /*******************************************
 Written by Erlend Eide Bø // eeb@ssb.no
 
-Last changed 06.05.2026
+Last changed 07.05.2026
 
 This code checks the share of investors with 
  residential address in Oslo or nearby. 
