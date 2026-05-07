@@ -1,7 +1,7 @@
 /**************************************
 Written by Erlend Eide Bø // eeb@ssb.no
 
-Last changed 14.01.2026 
+Last changed 07.05.2026 
 Measuring the population inflow and 
  outflow to Oslo, for the paper 
  "Buy to let".
@@ -29,7 +29,6 @@ g kvart = quarterly(kv,"YQ")
 g kv = quarter(dofq(kvart))
 
 * Adjusting for quarterly seasonal effects
-*reg shinflow kvart	
 egen msh = mean(shinflow) in 1/73
 reg shinflow i.kv in 1/73
 predict rsh, res
