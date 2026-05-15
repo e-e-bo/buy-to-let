@@ -4,7 +4,8 @@ Written by Erlend Eide Bø // eeb@ssb.no
 Last changed 15.05.2026
 
 Regressions of investor share on housing 
- price growth. 
+ price growth. Table 1 and Table D1 in
+ "Buy to Let".
 
 Input: investors_2.dta created by
  /prep/BTL_ownership.do;
