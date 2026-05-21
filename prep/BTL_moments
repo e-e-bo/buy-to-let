@@ -176,4 +176,4 @@ replace aqleie = round(aqleie) / 1000
 * Simulation over 22 quarters.
 keep in 9/30
 
-export delim ~/Matlab/moments_MSM, replace novar
+export delim /data/moments_MSM, replace novar
