@@ -1,7 +1,7 @@
-/********************************************
+/**********************************************
 Written by Erlend Eide Bø // eeb@ssb.no
 
-Last changed 15.05.2026
+Last changed 21.05.2026
 
 Regressions of investor share on housing 
  price growth. Table 1 and Table D1 in
@@ -11,9 +11,9 @@ Input: investors_2.dta created by
  /prep/BTL_ownership.do;
 tax.dta created by /prep/Export_taxdata.sas.
  
-Output: tab1a.tex; tabd1b.tex; tabd1c.tex;
- tab1b.tex; tabd1a.tex.
-********************************************/
+Output: investors_inc.dta; tab1a.tex; 
+ tabd1b.tex; tabd1c.tex; tab1b.tex; tabd1a.tex.
+**********************************************/
 
 ****************
 * Investor share
@@ -128,6 +128,10 @@ drop bel28_2 - person_id
 rename aar faar // Merging on transaction year, not registry year.
 
 merge 1:m hushnr faar using investors_2, keep(match using) 
+
+save investors_inc, replace
+
+use investors_inc, clear
 
 drop if month > 623  // No tax data after 2012
 
