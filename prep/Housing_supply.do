@@ -6,7 +6,7 @@ Last changed 24.01.2026
 Data on housing supply in Oslo,
  for the paper "Buy to let".
 
-Input: Antbolig_full_ex.xlsx; 
+Input: Housing_stock.xlsx; 
  Boligbygg_ex.xlsx from Statistcs
  Norway's Statbank; 
  inflow_out.dta from Pop_oslo.do.
@@ -19,7 +19,7 @@ Output: antbolig.dta; antbolig_y.dta;
 
 * Stock at the beginnging of the year (01.01)
 clear all
-import excel Antbolig_full_ex.xlsx, first
+import excel Housing_stock.xlsx, first
 
 destring aar, replace
 drop if aar == .
