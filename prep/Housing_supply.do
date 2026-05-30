@@ -1,7 +1,7 @@
 /**************************************
 Written by Erlend Eide Bø // eeb@ssb.no
 
-Last changed 24.01.2026 
+Last changed 30.05.2026 
 
 Data on housing supply in Oslo,
  for the paper "Buy to let".
