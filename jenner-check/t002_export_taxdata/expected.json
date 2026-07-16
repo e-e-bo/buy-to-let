@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-16T13:40:00Z",
+  "_captured_run_id": "r_385fad65b52440d3872d0fa64eda2cf3",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: DATA selv2005",
+    "NOTE: DATA selv2006",
+    "NOTE: Wrote selv (10 rows, 18 columns).",
+    "NOTE: Exported 10 rows to ./tax.dta.",
+    "NOTE: PROC PRINT completed: 10 observations printed, 18 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

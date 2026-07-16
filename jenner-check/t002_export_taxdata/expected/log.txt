@@ -1,0 +1,55 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA selvh2005
+
+NOTE: Processing inline DATALINES (5 lines)
+
+NOTE: Read 5 rows from DATALINES.
+NOTE: Wrote selvh2005 (5 rows, 17 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA selv2005
+
+
+NOTE: Read 5 rows from selvh2005.
+NOTE: Wrote selv2005 (5 rows, 18 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA selvh2006
+
+NOTE: Processing inline DATALINES (5 lines)
+
+NOTE: Read 5 rows from DATALINES.
+NOTE: Wrote selvh2006 (5 rows, 17 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA selv2006
+
+
+NOTE: Read 5 rows from selvh2006.
+NOTE: Wrote selv2006 (5 rows, 18 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA selv
+
+
+NOTE: Read 5 rows from selv2005.
+NOTE: Read 10 rows from selv2006.
+NOTE: Wrote selv (10 rows, 18 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC EXPORT data=selv outfile=./tax.dta
+
+NOTE: Exported 10 rows to ./tax.dta.
+NOTE: PROC PRINT data=selv
+
+NOTE: PROC PRINT completed: 10 observations printed, 18 variables
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+

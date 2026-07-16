@@ -1,0 +1,40 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA finn2005m2
+
+NOTE: Processing inline DATALINES (3 lines)
+
+NOTE: Read 3 rows from DATALINES.
+NOTE: Wrote finn2005m2 (3 rows, 42 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA finn2005
+
+
+NOTE: Read 3 rows from finn2005m2.
+NOTE: Wrote finn2005 (3 rows, 43 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=finn2005
+
+NOTE: Read 3 rows from finn2005.
+NOTE: Wrote finn2005 (3 rows, 43 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA finn2005
+
+
+NOTE: Read 3 rows from finn2005.
+NOTE: Wrote finn2005 (3 rows, 45 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC EXPORT data=finn2005 outfile=./finndata_sample.dta
+
+NOTE: Exported 3 rows to ./finndata_sample.dta.
+NOTE: PROC PRINT data=finn2005
+
+NOTE: PROC PRINT completed: 3 observations printed, 5 variables
+

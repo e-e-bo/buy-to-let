@@ -1,0 +1,41 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA gabba
+
+NOTE: Processing inline DATALINES (10 lines)
+
+NOTE: Read 10 rows from DATALINES.
+NOTE: Wrote gabba (10 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA housingid
+
+
+NOTE: Read 10 rows from gabba.
+NOTE: Wrote housingid (10 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC EXPORT data=housingid outfile=./housingid.dta
+
+NOTE: Exported 10 rows to ./housingid.dta.
+NOTE: DATA housingid_oslo
+
+
+NOTE: Read 10 rows from gabba.
+NOTE: Wrote housingid_oslo (10 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC EXPORT data=housingid_oslo outfile=./housingid_oslo.dta
+
+NOTE: Exported 10 rows to ./housingid_oslo.dta.
+NOTE: PROC PRINT data=housingid
+
+NOTE: PROC PRINT completed: 10 observations printed, 9 variables
+NOTE: PROC PRINT data=housingid_oslo
+
+NOTE: PROC PRINT completed: 10 observations printed, 8 variables
+
