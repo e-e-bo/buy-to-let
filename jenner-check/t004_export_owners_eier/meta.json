@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_export_owners_eier",
+  "source_file": "prep/Export_owners.sas",
+  "source_blob_sha": "e1a8c36f016c3a26ad1a7dbc1bd2ec6abbbde9a4",
+  "source_commit": "d9858397207384713cc7d76059e17f08f4a33b98",
+  "notes": "The 'Adding owners' section (test13 through eier2, lines 190-252 of the original) builds a per-property ownership-share table from a confidential Statistics Norway ownership register (skatt.gabei, reached via libname skatt '/data'). Substituted an 8-row inline gabei sample (with two rows sharing a missing matrikkelenhetid so the LAG-based fill-in is genuinely exercised) for the external libname; the DATA-step logic -- LAG-conditioned property-id backfill, ownership-share arithmetic, RETAIN across a BY group, and the self anti-join (MERGE eier / nivh (IN=en); IF NOT en) that drops 'H' duplicates when an 'F'-level owner exists for the same property -- is unchanged from upstream. Confirmed the anti-join correctly removed both H-level duplicate rows in the captured run."
+}

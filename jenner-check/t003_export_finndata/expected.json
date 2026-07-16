@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-16T13:50:00Z",
+  "_captured_run_id": "r_ac7fef3c645f465e9fad37d91f0b3fd4",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: DATA finn2005m2",
+    "NOTE: Wrote finn2005m2 (3 rows, 42 columns).",
+    "NOTE: PROC EXPORT data=finn2005 outfile=./finndata_sample.dta",
+    "NOTE: Exported 3 rows to ./finndata_sample.dta.",
+    "NOTE: PROC PRINT completed: 3 observations printed, 5 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

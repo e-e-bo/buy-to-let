@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_export_taxdata",
+  "source_file": "prep/Export_taxdata.sas",
+  "source_blob_sha": "033fff07734e95e633e76bc3f24a7a751077bffd",
+  "source_commit": "d9858397207384713cc7d76059e17f08f4a33b98",
+  "notes": "Cleans confidential Statistics Norway individual tax registers (skatt.selvh2005, skatt.selvh2006, reached via libname skatt '/data') and exports the stacked panel to Stata. Substituted 5-row inline selvh2005 / selvh2006 samples with the same columns for the two external libnames; the RENAME-on-SET normalization (bel3110 -> bel3114 so the two vintages share a column name), the per-year aar= tag, the vertical SET stacking, and the PROC EXPORT DBMS=STATA call are unchanged from upstream. Added PROC PRINT / PROC MEANS at the end purely to exercise the resulting panel for this bundle (not present in the original, which ends at PROC EXPORT)."
+}

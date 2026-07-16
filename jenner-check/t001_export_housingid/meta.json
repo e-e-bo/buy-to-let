@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_export_housingid",
+  "source_file": "prep/Export_housingid.sas",
+  "source_blob_sha": "7a489f52214dceb4d2f7772b67eb2bb960bcd4f8",
+  "source_commit": "d9858397207384713cc7d76059e17f08f4a33b98",
+  "notes": "Cleans a confidential Statistics Norway property register (skatt.gabba, reached via libname skatt '/data') into housingid / housingid_oslo and exports both to Stata. Substituted a 10-row inline gabba sample with the same columns (matrikkelenhetid, kommunenr, gate_gaardsnr, hus_bruksnr, bokstav_festenr, gaardsnr, bruksnr, seksjonsnr, leilighetsnr, same) for the external libname; DATA step / WHERE / PROC EXPORT logic unchanged. Fixed one upstream typo (missing semicolon after '* Only Oslo' comment on line 29, which in real SAS 9.4 swallows the following DATA statement into the comment -- documented `*` comment semantics, confirmed as a script defect, not a Jenner bug). Also note: the housingid_oslo step has two WHERE statements in sequence; per documented SAS semantics only the last WHERE statement in a step is honored (they are not ANDed), so the kommunenr='0301' filter is superseded by the second WHERE -- Jenner reproduces this real-SAS behavior faithfully."
+}
