@@ -1,12 +1,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Written by Erlend Eide Bø¸ // eeb@ssb.no
 %
-% Last changed 05.09.2026 
+% Last changed 22.09.2026 
 %
 % Making the data for Figure E.4 in 
 % Buy-to-let.
 %
-% Input: datablsim.mat; created by
+% Input: datablsim.mat created by
 %  /matlab/buytolet.m;
 %
 % Output: rentalfig.csv.
