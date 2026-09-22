@@ -8,11 +8,14 @@ Aggreagate statistics from the Statistics Norway statbank (www.ssb.no/statbank; 
 - Boligbygg_ex_xlsx has data from Table 05889 (downloaded 13.03.2024).
 - Cpimall.xlsx has data from Table 03013 (downloaded 26.08.2016).
 - Mortgage rates_ex.xlsx has data from Table 07045 and Table 07200 (downloaded 24.01.2024).
+Some other data created by own code.
+- moments_MSM.csv, trans_rate.csv data moments created by code in /prep/.
+- rentalfig.csv, impfunc.csv created by code in /matlab/.
 
 Empirical results: 
 Code for the Results in Section 2 (Stata).
 
-Model:
+Matlab:
 Code for the Model with results, Sections 3, 4 and 5 (Matlab).
 
 Prep:
