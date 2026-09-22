@@ -1,7 +1,7 @@
 /**************************************
 Written by Erlend Eide Bø // eeb@ssb.no
 
-Last changed 31.05.2026 
+Last changed 22.09.2026 
 
 Measuring the yearly number of 
  registred transactions in Oslo.
@@ -111,6 +111,6 @@ drop MS21
 
 keep in 9/30
 
-export delim ~/Matlab/trans_rate, replace novar
+export delim /data/trans_rate.csv, replace novar
 
 
